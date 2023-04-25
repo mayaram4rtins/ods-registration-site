@@ -8,12 +8,12 @@
 
 # :pushpin: Índice
 
-* [Índice](https://github.com/mayaram4rtins/compilador-de-arquivos-excel#pushpin-índice)
-* [Descrição do Projeto](https://github.com/mayaram4rtins/compilador-de-arquivos-excel#page_facing_up-descrição-do-projeto)
-* [Funcionalidades do Projeto](https://github.com/mayaram4rtins/compilador-de-arquivos-excel#desktop_computer-funcionalidades-do-projeto)
-* [Ferramentas e Linguagens Utilizadas](https://github.com/mayaram4rtins/compilador-de-arquivos-excel#snake-ferramentas-e-linguagem-utilizadas)
-* [Pessoas Contribuidoras](#pessoas-contribuidoras)
-* [Construção do Projeto](https://github.com/mayaram4rtins/compilador-de-arquivos-excel#hammer-construção-do-projeto)
+* [Index](https://github.com/mayaram4rtins/ods-registration-site/blob/main/README.md#pushpin-índice)
+* [Project Description](https://github.com/mayaram4rtins/ods-registration-site/blob/main/README.md#page_facing_up-project-description)
+* [Project Functionality](https://github.com/mayaram4rtins/ods-registration-site/blob/main/README.md#desktop_computer-project-functionality)
+* [Project Individual Development](https://github.com/mayaram4rtins/ods-registration-site/blob/main/README.md#wrench-project-individual-development)
+* [Tools and Languages](https://github.com/mayaram4rtins/ods-registration-site/blob/main/README.md#snake-ferramentas-e-linguagem-utilizadas)
+* [Project Process](https://github.com/mayaram4rtins/ods-registration-site/blob/main/README.md#snake-ferramentas-e-linguagem-utilizadas)
 
 # :page_facing_up: Project Description
 
@@ -36,11 +36,11 @@ The project was developed in a group by the developers: Fabrício Silva Brito, R
 - `Funcionalidade 3`: Skills development in HTML;
 - `Funcionalidade 4`: Skills development in Power B.I.;
 
-# :snake: Ferramentas e linguagem utilizadas
+# :snake: Tools and Languages
 
 + Python 3.11.1
 + Visual Studio Code 1.77.6
 + Power B.I. 
 + MySQL Workbench 8.0
 
-# :hammer: Construção do projeto
+# :hammer: Project Process
