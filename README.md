@@ -6,7 +6,7 @@
 
 ![ods registration site logo](https://user-images.githubusercontent.com/91706209/234380747-8f36e10c-5f02-49e9-8dc2-5f904255cd21.png)
 
-# :pushpin: Índice
+# :pushpin: Index
 
 * [Index](https://github.com/mayaram4rtins/ods-registration-site/blob/main/README.md#pushpin-índice)
 * [Project Description](https://github.com/mayaram4rtins/ods-registration-site/blob/main/README.md#page_facing_up-project-description)
