@@ -17,24 +17,26 @@
 
 # :page_facing_up: Project Description
 
-This project came together with the subject of Software Engineering: Models, Methods and Techniques as a way to improve knowledge with regard to software engineering. Thus, requirements, feasibility study, specification of requirements and also validation were raised.
+This project came together with the subject of Software Engineering: Models, Methods and Techniques as a way to improve knowledge with regard to software engineering. Thus, feasibility study, specification of requirements and also validation were raised.
 
-The end result consists of a website that makes it possible to register projects linked to project 13.1: Strengthen resilience and adaptive capacity to climate-related risks and natural disasters in all countries of SDG 13: Action Against Global Climate Change
+The end result consists of a website that makes it possible to register projects linked to the project 13.1: Strengthen resilience and adaptive capacity to climate-related risks and natural disasters in all countries of SDG 13: Action Against Global Climate Change.
 
-The project was developed in a group by the developers: Fabrício Silva Brito, Rogério Vieira da Silva, Mayara Neves Martins and Wesley de Jesus Marciano
+The project was developed in a group by the developers: Fabrício Silva Brito, Rogério Vieira da Silva, Mayara Neves Martins and Wesley de Jesus Marciano.
 
 # :desktop_computer: Project Functionality
 
-- `Funcionalidade 1`: Registration of the projects by website;
-- `Funcionalidade 2`: Backup of the data registered in a MySQL database;
-- `Funcionalidade 3`: Visibility in Power B.I. of the data registered;
+- `Functionality 1`: Registration of the projects by website;
+- `Functionality 2`: Backup of the data registered in a MySQL database;
+- `Functionality 3`: Visibility in Power B.I. of the data registered;
 
 # :wrench: Project Individual Development
 
-- `Funcionalidade 1`: Skills development in MySQL;
-- `Funcionalidade 2`: Skills development in Python;
-- `Funcionalidade 3`: Skills development in HTML;
-- `Funcionalidade 4`: Skills development in Power B.I.;
+- `Development 1`: Skills development in MySQL;
+- `Development 2`: Skills development in Python;
+- `Development 3`: Skills development in HTML;
+- `Development 4`: Skills development in Power B.I.;
+- `Development 5`: Development of Requirements Engineering notion;
+- `Development 6`: Development of Architeture Engineering notion;
 
 # :snake: Tools and Languages
 
@@ -42,5 +44,6 @@ The project was developed in a group by the developers: Fabrício Silva Brito, R
 + Visual Studio Code 1.77.6
 + Power B.I. 
 + MySQL Workbench 8.0
++ HTML 
 
 # :hammer: Project Process
