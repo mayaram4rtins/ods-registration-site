@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<title>Login</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Static/CSS/Tela_de_login.css">
 </head>
 <body>
-	<div class="login-form">
-		<h2>Login</h2>
-		<form>
-			<label for="username">Username:</label>
-			<input type="text" id="username" name="username" required>
-			
-			<label for="password">Password:</label>
-			<input type="password" id="password" name="password" required>
-			
-			<input type="submit" value="Submit">
-		</form>
-	</div>
+    <main>
+        <h1>WeatherWatch</h1>
+        <div class="social-media">
+            <a href="#">
+                <img src="../Static/Imagens/google.png" alt="Google">
+            </a>
+            <a href="#">
+                <img src="../Static/Imagens/instagram.png" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="../Static/Imagens/linkedin.png" alt="Linkedin">
+            </a>
+        </div>
+
+        <div class="alternative">
+            <span>OR</span>
+        </div>
+
+        <form action="">
+            <label for="name">
+                <span>Name</span>
+                <input type="text" id="name" name="name">
+            </label>
+
+            <label for="password">
+                <span>Password</span>
+                <input type="password" id="password" name="password">
+            </label>
+
+            <input type="submit" value="Sign Up" id="button">
+        </form>
+    </main>
+    <section class="images">
+        <div class="circle"></div>
+    </section>
 </body>
 </html>

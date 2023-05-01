@@ -131,17 +131,6 @@ section.images img {
     width: 100%;
 }
 
-section.images .circle {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(45deg, #ffffff, #347e25);
-    clip-path: circle(40% at right 80%);
-    z-index: -1;
-}
-
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
     section.images img {
         width: 110%;
