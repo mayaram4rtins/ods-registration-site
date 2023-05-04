@@ -26,7 +26,8 @@
             <span>OR</span>
         </div>
 
-        <form action="/autenticar" method='POST'>
+        <form action="{{ url_for('autenticar') }}" method='POST'>
+            <input type="hidden" name="proxima" value="{{ proxima }}">
             <label for="name">
                 <span>Name</span>
                 <input type="text" id="name" name="name">
