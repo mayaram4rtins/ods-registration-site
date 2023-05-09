@@ -8,18 +8,29 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='Tela_de_login.css') }}">
 </head>
 <body>
-    <main>
-        <h1>WeatherWatch</h1>
+    <header class="cabesalho">
+        <nav class="cabesalho-menu">
+            <a class="cabesalho-menu-link" href="https://www.youtube.com/watch?v=P_MfrHJc6_A&list=RD9Vo3uy3bTGc&index=14&ab_channel=OnrazeRecords">Sign Up</a>
+            <a class="cabesalho-menu-link" href="https://www.google.com.br/">Suporte</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        
+        <h1 class="titulo">WeatherWatch</h1>
         <div class="social-media">
             <a href="#">
-                <img src="../static/google.png" alt="Google">
+                
+            <img src="../static/google.png" alt="Google">
             </a>
+
             <a href="#">
-                <img src="../static/instagram.png" alt="instagram">
+            <img src="../static/instagram.png" alt="instagram">
             </a>
+
             <a href="#">
-                <img src="../static/linkedin.png" alt="Linkedin">
+            <img src="../static/linkedin.png" alt="Linkedin">
             </a>
+
         </div>
 
         <div class="alternative">
@@ -28,32 +39,40 @@
 
         <form action="{{ url_for('autenticar') }}" method='POST'>
             <input type="hidden" name="proxima" value="{{ proxima }}">
-            <label for="name">
-                <span>Name</span>
-                <input type="text" id="name" name="name">
-            </label>
+                <label for="name">
+                        <span>Name</span>
+                        <input type="text" id="name" name="name">
+                        </label>
 
-            <label for="password">
-                <span>Password</span>
-                <input type="password" id="password" name="password">
-            </label>
+                        <label for="password">
+                            <span>Password</span>
+                            <input type="password" id="password" name="password">
+                        </label>
+                
 
             <input type="submit" value="Sign Up" id="button">
         </form>
-    
-    {% with messages = get_flashed_messages() %}
-        {% if messages %} 
-            <ul id="messages" class="list-unstyled">
-            {% for message in messages %}
-                <li class="alert alert-success">{{ message }}</li>
-            {% endfor %}
-            </ul>
-        {% endif %}
-    {% endwith %}
-
+        
+        <div class="message-login">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %} 
+                <ul id="messages" class="list-unstyled">
+                        {% for message in messages %}
+                                <li class="alert alert-success">{{ message }}</li>
+                        {% endfor %}
+                </ul>
+                {% endif %}
+            {% endwith %}
+        </div>
     </main>
     <section class="images">
-        <div class="circle"></div>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
     </section>
+
+    <footer class="rodapé">
+        <p>Desenvolvido por alunos da Universidade São Judas para UC Sistemas de controles e inteligencia artificial </p>
+    </footer>
 </body>
 </html>

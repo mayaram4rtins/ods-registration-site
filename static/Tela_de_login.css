@@ -16,6 +16,12 @@ body {
     min-width: 100vw;
 }
 
+.cabesalho{
+color: #6C63FF;
+background: ;
+
+
+}
 main {
     width: 50vw;
     display: flex;
@@ -115,53 +121,59 @@ main form input[type="submit"] {
     transition: all .3s ease-in-out;
 }
 
+main form input[type="Já tenho conta"] {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 625px;
+    left: 500px;
+    cursor: pointer;
+    width: 10%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 40px;
+    background: #6C63FF;
+    color: white;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
 main form input[type="submit"]:hover {
     background: #347e25;
 }
 
-section.images {
-    width: 50vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 4rem;
+.logo_Da_São_Judas{
+    width: 16%;
+    position: absolute;
+    top: -30px;
+    left: 1245px;
 }
 
-section.images img {
-    width: 100%;
+.logo_Do_Suporte{
+    width: 3%;
+    position: absolute;
+    top: 15px;
+    left: 1500px;
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
-    section.images img {
-        width: 110%;
-    }
+.rodapé{
+    padding: 5px;
+    color: #000000;
+    background-color: #297e18
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.9rem;
+    font-weight: 200;
+    position: absolute;
+    top: 96%;
+    left: 25%;
+    
 
-    section.images .circle {
-        clip-path: circle(35% at right 80%);
-    }
 }
 
-@media only screen and (max-width: 900px) {
-    section.images {
-        display: none;
-        visibility: hidden;
-    }
+.message-login{
 
-    main {
-        width: 100vw;
-    }
-}
 
-@media only screen and (max-width: 450px) {
-    main h1 {
-        font-size: 2rem;
-    }
 
-    main .alternative span {
-        font-size: 0.8rem;
-    }
 
-    main form label span, main form input[type="submit"] {
-        font-size: 1rem;
-    }
 }
