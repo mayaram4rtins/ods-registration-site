@@ -16,11 +16,11 @@ def login():
 def menu():
     return render_template('Tela_de_Menu.html')
 
-    @app.route('/novo-projeto')
-    def novoProjeto():
-        if 'user' not in session or session['user'] == None:
-            return redirect(url_for('login', proxima=url_for('novoProjeto')))
-        return render_template('Tela_de_CadastroProjeto.html')
+@app.route('/novo-projeto')
+def novoProjeto():
+    if 'user' not in session or session['user'] == None:
+        return redirect(url_for('login', proxima=url_for('novoProjeto')))
+    return render_template('Tela_de_CadastroProjeto.html')
 
 '''
 @app.route('/cadastro-projeto')
