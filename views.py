@@ -4,8 +4,8 @@ from models import User, Projetos
 
 @app.route('/')
 def index():
-    lista = Projetos.query.order_by(Projetos.id)
-    return render_template('Tela_de_apresentação.html', projetos=lista)
+    #lista = Projetos.query.order_by(Projetos.id)
+    return render_template('Tela_de_apresentação.html')
 
 @app.route('/login')
 def login():
