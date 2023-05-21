@@ -17,7 +17,6 @@ class Projetos(db.Model):
     nome = db.Column(db.String(100), nullable=False)
     user = db.Column(db.Integer, db.ForeignKey('cadastro_usuario.id_user'), nullable=False)
     desc = db.Column(db.String(150), nullable=False)
-    ods = db.Column(db.String(14), nullable=False)
     telefone = db.Column(db.String(19), nullable=False)
     data_cadastro = db.Column(db.DateTime(), nullable=False)
     status_projeto = db.Column(db.String(19), nullable=False)

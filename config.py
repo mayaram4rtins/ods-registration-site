@@ -1,5 +1,3 @@
-
-
 SECRET_KEY = 'palavrasecreta'
 
 SQLALCHEMY_DATABASE_URI = \
