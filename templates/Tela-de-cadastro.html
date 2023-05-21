@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='Tela_de_Cadastro.css') }}">
-
+    <link rel="stylesheet" href="../static/Tela_de_Cadastro.css">
 </head>
 <body>
     <main>
@@ -29,8 +28,13 @@
 
         <form action="">
             <label for="name">
-                <span>Name</span>
+                <span>Nome Completo</span>
                 <input type="text" id="name" name="name">
+            </label>
+
+            <label for="username">
+                <span>Nome de Usuário</span>
+                <input type="text" id="username" name="username">
             </label>
 
             <label for="email">
@@ -39,18 +43,31 @@
             </label>
 
             <label for="password">
-                <span>Password</span>
+                <span>Senha</span>
                 <input type="password" id="password" name="password">
             </label>
 
+            <label for="phone">
+                <span>Telefone</span>
+                <input type="tel" id="phone" name="phone">
+            </label>
+
+            <label for="project-id">
+                <span>ID do Projeto</span>
+                <input type="text" id="project-id" name="project-id">
+            </label>
+
+            <label for="project-description">
+                <span>Descrição do Projeto</span>
+                <input class="Descrição" type="text" id="project-description" name="project-description">
+            </label>
+
             <input type="submit" value="Sign Up" id="button">
-        </form>
-    </main>
-    <footer class="rodapé">
-        <p>Desenvolvido por  </p>
-    </footer>
-    <section class="images">
     
-    </section>
+        </form>
+
+        <img class="logo_Da_São_Judas" src="../static/usjt_logo-removebg-preview.png" alt="Logo da São Judas">
+    <footer class="rodapé" >Desenvolvido por alunos da Universidade São Judas para UC Sistemas de controles e inteligencia artificial</footer>
+    </main>
 </body>
 </html>

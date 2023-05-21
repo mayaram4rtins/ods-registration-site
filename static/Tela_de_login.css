@@ -18,7 +18,7 @@ body {
 
 .cabesalho{
 color: #6C63FF;
-background: ;
+background: #ffffff;
 
 
 }
@@ -160,20 +160,4 @@ main form input[type="submit"]:hover {
     padding: 5px;
     color: #000000;
     background-color: #297e18
-    text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: 0.9rem;
-    font-weight: 200;
-    position: absolute;
-    top: 96%;
-    left: 25%;
-    
-
-}
-
-.message-login{
-
-
-
-
 }
