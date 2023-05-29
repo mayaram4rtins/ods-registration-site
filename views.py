@@ -1,6 +1,7 @@
 from flask import render_template, request, flash, redirect, session, url_for
 from main import app, db
 from models import User, Projetos
+import mysql.connector
 
 @app.route('/')
 def index():
@@ -47,25 +48,50 @@ def cadastroProjeto():
 
     return redirect(url_for('menu'))
 
+@app.route('/atualizar-projeto')
+def atualizarProjeto():
+    projeto = Projetos.query.filter_by(id=request.form['id']).first()
+    projeto.nome = request.form['nome']
+    projeto.user = request.form['user']
+    projeto.desc = request.form['desc']
+    projeto.telefone = request.form['telefone']
+    projeto.data_cadastro = request.form['data_cadastro']
+    projeto.status_projeto = request.form['status_projeto']
+    projeto.tag = request.form['tag']
+
+    db.session.add(projeto)
+    db.session.commit()
+
+    return redirect(url_for('menu'))
+
+
+@app.route('/editar-projeto/<int:id>')
+def editarProjeto(id):
+    if 'user' not in session or session['user'] == None:
+        return redirect(url_for('login', proxima=url_for('editar')))
+    
+    projeto = Projetos.query.filter_by(id = id).first()
+
+    return render_template('Tela_de_Consulta.html', projeto=projeto)
+
 @app.route('/novo-usuario')
 def novoUsuario():
     return render_template('Tela-de-cadastro.html')
 
 @app.route('/cadastro-usuario')
 def cadastroUsuario():
-    id_user = request.form['id_user']
     nome = request.form['name']
     email = request.form['email']
-    senha = request.form['senha']
-    telefone = request.form['telefone']
+    senha = request.form['password']
+    telefone = request.form['phone']
 
-    usuario = User.query.filter_by(nome=nome).first()
+    usuario = User.query.filter_by(email=email).first()
 
     if usuario:
         flash('Usuário já existente!')
-        return redirect(url_for('menu'))
+        return redirect(url_for('cadastroProjeto'))
 
-    novo_user = Projetos(id_user=id_user, nome=nome, telefone=telefone, email=email, senha=senha)
+    novo_user = Projetos(nome=nome, telefone=telefone, email=email, senha=senha)
     
     db.session.add(novo_user)
     db.session.commit()
@@ -73,7 +99,7 @@ def cadastroUsuario():
     return redirect(url_for('menu'))
 
 @app.route('/editar')
-def editarProjeto():
+def edicaoProjeto():
     if 'user' not in session or session['user'] == None:
         return redirect(url_for('login', proxima=url_for('editarProjeto')))
     return render_template('Tela_de_CadastroProjeto.html')

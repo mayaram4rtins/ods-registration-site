@@ -30,36 +30,36 @@
 
             <label for="project-name">
                 <span>Nome de Projeto</span>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" value="{{ projeto.nome }}">
             </label>
 
             <label for="project-description">
                 <span>Descrição do Projeto</span>
-                <input class="Descrição" type="text" id="descricao" name="descricao">
+                <input class="Descrição" type="text" id="descricao" name="descricao" value="{{ projeto.desc }}">
             </label>
 
             <label for="user-id">
                 <span>Nome do Usuário Responsável</span>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" value="{{ projeto.user }}">
             </label>
 
             <label for="phone">
                 <span>Telefone</span>
-                <input type="tel" id="telefone" name="telefone">
+                <input type="tel" id="telefone" name="telefone" value="{{ projeto.telefone }}">
             </label>
 
             <label for="date">
                 <span>Data de Cadastro</span>
-                <input type="date" id="data_cadastro" name="data_cadastro">
+                <input type="date" id="data_cadastro" name="data_cadastro" value="{{ projeto.data_cadastro }}">
             </label>
 
             <label for="status">
                 <span>Status do Projeto</span>
-                <input type="text" id="status_projeto" name="status_projeto">
+                <input type="text" id="status_projeto" name="status_projeto" value="{{ projeto.status_projeto }}">
             </label>
 
             <label for="tag">
-                <select name="tag" required="required">
+                <select name="tag" required="required" value="{{ projeto.tag }}">
                     <option value="">Escolha uma tag para o projeto</option>
                     <option value="deslizamento">Deslizamento</option>
                     <option value="inundacao">Inundação</option>
