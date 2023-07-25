@@ -42,8 +42,6 @@ The project was developed in a group by the developers: Fabrício Silva Brito, R
 
 + Python 3.11.1
 + Visual Studio Code 1.77.6
-+ Power B.I. 
-+ MySQL Workbench 8.0
 + HTML5
 
 # :hammer: Project Process
